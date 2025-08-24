@@ -9,12 +9,6 @@ The model learns to fix buggy code snippets by training on paired datasets of bu
 It leverages [Hugging Face Transformers](https://huggingface.co/docs/transformers/index), [Datasets](https://huggingface.co/docs/datasets/index), and is optimized for use with **Google Colab** and **Google Drive**.
 
 ---
-> ### 🎬 **Demo Screenshot**
->
-> <p align="center">
->   <img src="assets/screenshot.png" alt="Demo Screenshot" width="700" style="border-radius: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.12);">
-> </p>
-
 
 ## ✨ Features
 
