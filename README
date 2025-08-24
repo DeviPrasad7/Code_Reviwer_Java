@@ -1,25 +1,62 @@
-Project Overview:
-  This project implements a code correction model using the T5 (Text-to-Text Transfer Transformer) architecture. The model learns to fix buggy code snippets from paired datasets containing buggy and fixed code     samples. Training is done using Hugging Face's transformers and datasets libraries, and leverages Google Colab with Google Drive for storage.
+# 🚀 Code Correction Model with T5
 
-Features:
-  Reads buggy and fixed code data from text files stored in Google Drive.
-  Uses T5 tokenizer and model for sequence-to-sequence training.
-  Includes data cleaning and tokenization pipelines for efficient preprocessing.
-  Training supports checkpoint saving and resuming.
-  Outputs a trained model saved on Google Drive.
-  Lightweight evaluation via sample output inspection.
+---
 
-Requirements:
-  Python 3.x
-  transformers library
-  datasets library
-  torch
-  Google Colab (optional, but used in this notebook)
-  Access to Google Drive for dataset storage and model checkpointing
+## 📝 Project Overview
 
-How to Run:
-  Mount your Google Drive in Colab
-  Prepare your dataset folders on Drive, each containing buggy.txt and fixed.txt files.
-  Set the notebook dataset folder paths accordingly.
-  Run cells sequentially to load, clean, preprocess, tokenize, and train the model.
-  Model checkpoints and the final model get saved to Google Drive.
+This project implements a **code correction model** using the powerful [T5 (Text-to-Text Transfer Transformer)](https://huggingface.co/docs/transformers/model_doc/t5) architecture.  
+The model learns to fix buggy code snippets by training on paired datasets of buggy and corrected code.  
+It leverages [Hugging Face Transformers](https://huggingface.co/docs/transformers/index), [Datasets](https://huggingface.co/docs/datasets/index), and is optimized for use with **Google Colab** and **Google Drive**.
+
+---
+
+## ✨ Features
+
+- 📂 Reads buggy and fixed code data from text files stored in Google Drive
+- 🤖 Utilizes T5 tokenizer and model for sequence-to-sequence learning
+- 🧹 Includes data cleaning and tokenization pipelines for efficient preprocessing
+- 💾 Supports checkpoint saving and resuming during training
+- 🗃️ Saves the trained model directly to Google Drive
+- 👀 Provides lightweight evaluation via sample output inspection
+
+---
+
+## ⚙️ Requirements
+
+- Python 3.x
+- [`transformers`](https://huggingface.co/docs/transformers/index)
+- [`datasets`](https://huggingface.co/docs/datasets/index)
+- `torch`
+- Google Colab *(optional, but recommended)*
+- Access to Google Drive for dataset storage and model checkpointing
+
+---
+
+## 🚦 How to Run
+
+1. **Mount your Google Drive** in Colab:
+    ```python
+    from google.colab import drive
+    drive.mount('/content/drive')
+    ```
+2. **Prepare your dataset folders** on Drive, each containing:
+    - `buggy.txt`
+    - `fixed.txt`
+3. **Set the notebook dataset folder paths** accordingly.
+4. **Run the notebook cells sequentially** to:
+    - Load, clean, preprocess, and tokenize the data
+    - Train the model
+5. **Model checkpoints and the final model** will be saved to your Google Drive.
+
+---
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!  
+Feel free to open an issue or submit a pull request.
+
+---
+
+## 📧 Contact
+
+For questions or support, please open an issue in this
